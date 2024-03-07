@@ -32,7 +32,7 @@ public class WebSecurityConfig {
                         .requestMatchers("/register").permitAll()
                         .anyRequest().authenticated()
                     )
-                .httpBasic(withDefaults())
+                .formLogin(withDefaults())
                 .csrf(AbstractHttpConfigurer::disable);
         http.sessionManagement(
                 sessionManagement ->
@@ -43,10 +43,9 @@ public class WebSecurityConfig {
         http.logout(
                 lOut ->
                     lOut.invalidateHttpSession(true)
-                            .clearAuthentication(true)
-                            .logoutUrl("/logout")
-                            .logoutSuccessUrl("/login")
-                            .permitAll()
+                    .clearAuthentication(true)
+                    .logoutSuccessUrl("/login")
+                    .permitAll()
                 );
         return http.build();
     }
