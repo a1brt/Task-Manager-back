@@ -16,6 +16,6 @@ public class AuthController {
 
     @PostMapping("/register")
     public void register(@RequestBody CreateUserCommand request){
-        userService.createDefaultUser(request);
+        userService.createUser(request);
     }
 }

@@ -16,7 +16,7 @@ public class UserService {
         this.userFactory = userFactory;
     }
 
-    public void createDefaultUser(CreateUserCommand command){
+    public void createUser(CreateUserCommand command){
         User user = userFactory.createUser(command);
         userRepository.save(user);
     }
