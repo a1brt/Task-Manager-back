@@ -1,9 +1,9 @@
-package com.albert.taskmanager.users.application;
+package com.albert.taskmanager.services;
 
-import com.albert.taskmanager.users.adapter.out.UserRepository;
-import com.albert.taskmanager.users.application.command.CreateUserCommand;
-import com.albert.taskmanager.users.domain.User;
-import com.albert.taskmanager.users.domain.UserFactory;
+import com.albert.taskmanager.repositories.UserRepository;
+import com.albert.taskmanager.commands.CreateUserCommand;
+import com.albert.taskmanager.domain.entities.User;
+import com.albert.taskmanager.domain.factories.UserFactory;
 import org.springframework.stereotype.Service;
 
 @Service

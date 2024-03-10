@@ -1,6 +1,7 @@
-package com.albert.taskmanager.users.domain;
+package com.albert.taskmanager.domain.factories;
 
-import com.albert.taskmanager.users.application.command.CreateUserCommand;
+import com.albert.taskmanager.commands.CreateUserCommand;
+import com.albert.taskmanager.domain.entities.User;
 import com.albert.taskmanager.util.UuidGenerator;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;

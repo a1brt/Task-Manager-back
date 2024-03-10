@@ -1,7 +1,7 @@
-package com.albert.taskmanager.users.adapter.in.controller;
+package com.albert.taskmanager.controllers;
 
-import com.albert.taskmanager.users.application.UserService;
-import com.albert.taskmanager.users.application.command.CreateUserCommand;
+import com.albert.taskmanager.services.UserService;
+import com.albert.taskmanager.commands.CreateUserCommand;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

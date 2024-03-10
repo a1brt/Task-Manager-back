@@ -1,4 +1,4 @@
-package com.albert.taskmanager.users.application.command;
+package com.albert.taskmanager.commands;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,7 +1,7 @@
-package com.albert.taskmanager.users.application;
+package com.albert.taskmanager.services;
 
-import com.albert.taskmanager.users.adapter.out.UserRepository;
-import com.albert.taskmanager.users.domain.User;
+import com.albert.taskmanager.repositories.UserRepository;
+import com.albert.taskmanager.domain.entities.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;

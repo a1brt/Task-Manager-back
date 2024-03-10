@@ -32,7 +32,7 @@ public class WebSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http.authorizeHttpRequests(
                 auth ->
-                    auth
+                    auth.requestMatchers("/test/**").permitAll()
                         .requestMatchers("/register").permitAll()
                         .anyRequest().authenticated()
                     )

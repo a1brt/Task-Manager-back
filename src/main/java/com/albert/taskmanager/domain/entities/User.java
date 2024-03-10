@@ -1,4 +1,4 @@
-package com.albert.taskmanager.users.domain;
+package com.albert.taskmanager.domain.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

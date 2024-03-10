@@ -1,6 +1,6 @@
-package com.albert.taskmanager.users.adapter.out;
+package com.albert.taskmanager.repositories;
 
-import com.albert.taskmanager.users.domain.User;
+import com.albert.taskmanager.domain.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

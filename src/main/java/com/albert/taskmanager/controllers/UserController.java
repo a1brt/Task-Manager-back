@@ -1,4 +1,4 @@
-package com.albert.taskmanager.users.adapter.in.controller;
+package com.albert.taskmanager.controllers;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
